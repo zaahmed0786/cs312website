@@ -67,24 +67,29 @@ section{
 }*/
 img{
     background-color: lavender;
-    margin:10px;
     border: 8px double rgb(45, 14, 118);
     padding: 1px 1px 1px 1px;
-    max-width: 1800px;
+    max-width: 95%;
     box-shadow: rgb(27, 5, 57) 0px 0px 10px, rgb(97, 4, 147) 0px 0px 10px;
     position:relative;
+    height: auto;
+    display: block;
+    margin: 7px auto;
+    justify-content: center;
     /* border-radius: 24px; */
     
 
 }
 #wrapper{
-    width:785px;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 785px;
     margin: 20px auto;
     background-color: #e6ebe2b8;
     border: 15px ridge rgb(55, 142, 55);
     box-shadow: 0 4px 6px lavender;
     padding: 10px;
+    display: block;
+    justify-content: center;
 }
 nav ul{
     list-style-type: none;
@@ -132,4 +137,99 @@ nav a:focus{
 }
 .card p{
     color: #0a4110;
+}
+
+/* Module 10 Responsive Styles */
+/*Image CSS edits remained in the previously defined selector above*/
+@media only screen and (max-width: 900px) {
+    #wrapper {
+        width: 90%;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    main {
+        width: auto;
+    }
+    nav a {
+        padding: 7px 15px;
+        font-size: 95%;
+        border-right: 1px solid rgba(95, 0, 56, 0.711);
+        border-left: 1px solid rgba(114, 2, 67, 0.716);
+    }
+    .cards {
+        flex-direction: column;
+    }
+    footer {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #wrapper{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 0 0;
+        border-radius: 0;
+        padding: 0px;
+        box-shadow: none;
+        box-sizing: border-box;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+        font-size: 80%;
+    }
+    nav {
+        padding: 0;
+        margin: 0 0 0 0;
+        background: none;
+        border: none;
+        border-right: 0px;
+        border-left: 0px;
+    }
+    nav ul{
+        border-top: 3px solid rgb(78, 9, 49);
+        border-bottom: 3px solid rgb(78, 9, 49);
+        border-right: 0px;
+        border-left: 0px;
+        flex-direction: column;
+    }
+    nav ul li{
+        background: linear-gradient(rgb(244, 235, 244), rgb(238, 187, 195));
+        border: 0.5px solid rgba(78, 9, 49, 0.608);
+        border-right: 0px;
+        border-left: 0px;
+    }
+    nav a{
+        text-align: center;
+        padding: 7px 20px;
+        border-right: 0px;
+        border-left: 0px;
+    }
+    main{
+        border-right: 0px;
+        border-left: 0px;
+        margin: 0px;
+        padding: 7px;
+    }
+    .card{
+        min-width: 0;
+    }
+    body{
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer{
+        margin: 0;
+        padding: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-radius: 0px;
+        text-align: center;
+    }
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
 }
