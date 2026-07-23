@@ -74,7 +74,7 @@ img {
     background-color: lavender;
     border: 8px double rgb(45, 14, 118);
     padding: 1px 1px 1px 1px;
-    max-width: 95%;
+    max-width: 100%;
     box-shadow: rgb(27, 5, 57) 0px 0px 10px, rgb(97, 4, 147) 0px 0px 10px;
     position:relative;
     height: auto;
@@ -87,8 +87,8 @@ img {
 
 }
 #wrapper {
-    width: 90%;
-    max-width: 785px;
+    width: 100%;
+    max-width: 850px;
     margin: 20px auto;
     background-color: #e6ebe2b8;
     border: 15px ridge rgb(55, 142, 55);
