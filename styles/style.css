@@ -163,6 +163,9 @@ span {
     */
     font-weight: bold;
 }
+#Favorites li {
+    padding-bottom: 15px;
+}
 
 /* Module 10 Responsive Styles */
 /*Image CSS edits remained in the previously defined selector above along with the iframe selector addition*/
